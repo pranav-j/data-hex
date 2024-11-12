@@ -34,3 +34,17 @@ cd ..
 cd backend
 npm install
 
+#### create a .env file here and paste the secret that I have emailed here
+
+```bash
+npm run dev
+
+#### Open terminal in frontend and run
+
+```bash
+npm run dev
+
+
+The app will be running on
+
+http://localhost:5174
