@@ -1,14 +1,10 @@
 import React from 'react';
 
 export default function DeletePopup({ setDeletePopupId, deletePopupId }) {
-    // const handleConfirmDelete = () => {
-    //     // Add delete logic here, then close the popup
-    //     setDeletePopupId(null);
-    // };
+
 
     const handleConfirmDelete = async () => {
         try {
-            // Make the delete request to the backend
             const response = await fetch(`http://localhost:9090/instances/${deletePopupId}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
@@ -16,9 +12,7 @@ export default function DeletePopup({ setDeletePopupId, deletePopupId }) {
 
             if (response.ok) {
                 console.log("Instance deleted successfully");
-                // Update the instances list after deletion
-                // setInstances(prevInstances => prevInstances.filter(instance => instance._id !== deletePopupId));
-                setDeletePopupId(null);  // Close the popup after successful delete
+                setDeletePopupId(null);
             } else {
                 console.error("Failed to delete instance");
             }

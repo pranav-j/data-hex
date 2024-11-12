@@ -21,28 +21,6 @@ export default function Instance({ onAddInstance, setDeletePopupId, setEditData 
     const [data, setData] = useState([]);
 
 
-// Function to get displayable participantTypes and tickets with a count for overflow
-  
-
-
-
-//   useEffect(() => {
-//     const fetchInstances = async () => {
-//       try {
-//         const response = await fetch("http://localhost:9090/instances");
-//         const result = await response.json();
-//         setData(result);
-//       } catch (error) {
-//         console.error("Error fetching instances:", error);
-//       }
-//     };
-//     fetchInstances();
-//   }, []);
-
-//   const addInstance = () => {
-//     onAddInstance()
-//   }
-
 
 useEffect(() => {
     fetchInstances(setData);

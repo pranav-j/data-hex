@@ -2,7 +2,6 @@ import tick from "../assets/tick.png";
 import dashBoard from "../assets/dashboard.png";
 import back from "../assets/back.png";
 import config from "../assets/config.svg"
-// import { ReactComponent as config } from "../assets/config.svg"
 
 
 export default function SideBar() {
