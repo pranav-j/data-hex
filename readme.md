@@ -19,3 +19,18 @@ Start by cloning the repository to your local machine:
 ```bash
 git clone https://github.com/pranav-j/data-hex.git
 cd data-hex
+
+
+### Step 2: Install frontend dependencies
+
+```bash
+cd frontend
+npm install
+
+### Step : Install frontend dependencies
+
+```bash
+cd ..
+cd backend
+npm install
+
